@@ -23,6 +23,7 @@
     span {
       font-weight: 900;
       color: white;
+      // font-style: normal;
     }
     button {
       width: 100px;
@@ -42,6 +43,48 @@
     gap: 10px;
     span {
       color: white;
+    }
+  }
+}
+.navbarP2 {
+  height: 20vh;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    bottom: 100px;
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    .navbarinfo {
+      display: flex;
+      gap: 13px;
+      ul {
+        padding-right: 10px;
+        margin-bottom: 10px;
+        border-right: 1px solid gray;
+      }
+      button {
+        height: 30px;
+        width: 100px;
+        position: absolute;
+        left: 80%;
+        bottom: 6%;
+        border-radius: 10px;
+        background: #4d8c48;
+        border: none;
+        cursor: pointer;
+        color: #f3f3f3;
+      }
+      .extraList {
+        border: none !important;
+      }
     }
   }
 }
