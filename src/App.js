@@ -1,14 +1,11 @@
 import "./App.css";
 import Home from "./pages/home";
+import Auth from "./pages/auth";
 // import React,{ useState } from "react";
-import './style.scss';
-
+import "./style.scss";
 
 function App() {
-
-  return (
-    <Home></Home>
-  );
+  return <Home />;
 }
 
 export default App;

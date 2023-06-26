@@ -1,8 +1,8 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'Rubik', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .navbarP1 {
   display: flex;
@@ -16,15 +16,15 @@ font-family: 'Ubuntu', sans-serif;
     display: flex;
     gap: 20px;
     align-items: center;
-    background: #4D8C48;
-    img{
+    background: #4d8c48;
+    img {
       height: 25px;
     }
-    span{
-      font-weight:900;
+    span {
+      font-weight: 900;
       color: white;
     }
-    button{
+    button {
       width: 100px;
       height: 25px;
       border-radius: 5px;
@@ -35,13 +35,98 @@ font-family: 'Ubuntu', sans-serif;
     }
   }
   .blackBar {
-    flex: 0.4;    
+    flex: 0.4;
     background: black;
-    display: flex ;
-    align-items: center; 
+    display: flex;
+    align-items: center;
     gap: 10px;
-   span{
+    span {
       color: white;
     }
   }
+}
+
+// auth page css started from here.......
+
+.authBg {
+  background-color: rgb(148, 91, 91);
+  height: 100vh;
+  background-size: cover;
+  background-image: url(/components/img/637871091351756430DSC03881-Copy.jpg);
+}
+
+.authBgFilter {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.673);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage {
+  height: 60vh;
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.613);
+  border-radius: 30px;
+}
+
+.loginPage img {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  padding-top: 0%;
+  padding-left: 15%;
+}
+
+.loginPage h1 {
+  padding-top: 22%;
+  padding-left: 44%;
+  font-size: 40px;
+  color: #4d8c48;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inputBox input {
+  width: 400px;
+  height: 40px;
+  border-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+}
+
+.inputBox p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 40%;
+  color: #4d8c48;
+}
+.inputBox h5 {
+  padding-left: 40%;
+  color: #4d8c48;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.inputBox div {
+  height: 40px;
+  width: 100px;
+  padding-right: 40%;
+}
+
+.inputBox div button {
+  height: 45px;
+  width: 150px;
+  font-size: 25px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: #4d8c48;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
 }
