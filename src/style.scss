@@ -1,8 +1,19 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'Rubik', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar{
+  // overflow: hidden;
+  // position: fixed;
+  z-index: 500px;
+  // top: 0px;
+  overflow: hidden;
+  // background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbarP1 {
   display: flex;
@@ -16,15 +27,16 @@ font-family: 'Ubuntu', sans-serif;
     display: flex;
     gap: 20px;
     align-items: center;
-    background: #4D8C48;
-    img{
+    background: #4d8c48;
+    img {
       height: 25px;
     }
-    span{
-      font-weight:900;
+    span {
+      font-weight: bold !important;
       color: white;
+      // font-style: normal;
     }
-    button{
+    button {
       width: 100px;
       height: 25px;
       border-radius: 5px;
@@ -35,13 +47,61 @@ font-family: 'Ubuntu', sans-serif;
     }
   }
   .blackBar {
-    flex: 0.4;    
+    flex: 0.4;
     background: black;
-    display: flex ;
-    align-items: center; 
-    gap: 10px;
-   span{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    gap: 30px;
+    font-weight: 600 !important;
+    span {
       color: white;
+    }
+  }
+}
+.navbarP2 {
+  height: 20vh;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    bottom: 100px;
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    .navbarinfo{
+      display: flex;
+      gap: 13px;
+      ul{
+        padding-right: 10px;
+        margin-bottom: 10px;
+        border-right: 1px solid gray;
+            
+      }
+      button{
+       height: 30px;
+       width: 100px;
+       position: absolute;
+       left: 80%;
+       bottom: 6%;
+       border-radius: 10px;
+       background: #4d8c48;
+       border: none;
+       cursor: pointer;
+       color: #f3f3f3;
+
+      
+       
+      }
+      .extraList{
+        border: none !important;
+      }
     }
   }
 }

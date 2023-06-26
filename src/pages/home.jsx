@@ -6,6 +6,7 @@ function home(){
         <div className='home'>
         <div className="container">
             <HomeNavbar></HomeNavbar>
+           
         </div>  
     </div>
     )
