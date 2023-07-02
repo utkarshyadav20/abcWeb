@@ -1,7 +1,16 @@
 import React from "react";
 import socialMedia from "../components/img/socialMedia.png";
 import schoolLogo from "../components/img/ABC SCHOOL LOGO.png";
-function homeNavbar() {
+import {useNavigate,Link} from "react-router-dom"
+
+import about from "../pages/about";
+function HomeNavbar() {
+  const navigate=useNavigate();
+
+  const navigateToAuth = () => {
+    // 👇️ navigate to /contacts
+    navigate('/auth');
+  };
   return (
     <div className="navbar">
       <div className="navbarP1">
@@ -15,7 +24,12 @@ function homeNavbar() {
         </div>
         <div className="blackBar">
           <span>Online Payment</span>
-          <span>About us</span>
+         
+         <Link to="/aboutUs">
+
+          <span >About us</span>
+         </Link>
+        
         </div>
       </div>
 
@@ -23,14 +37,20 @@ function homeNavbar() {
         <div className="logo">
           <img src={schoolLogo} alt="" />
           <div className="navbarinfo">
+            <Link to="/" style={{textDecoration: 'none',color:'black'}}>
+
             <ul id="borderLeft"> HOME </ul>
+            </Link>
             <ul id="borderLeft"> INTRODUCTION</ul>
             <ul id="borderLeft"> ACADEMIC </ul>
             <ul id="borderLeft"> RULES & REGULATION </ul>
+            <Link to="/infra" style={{textDecoration: 'none',color:'black'}}>
+
             <ul id="borderLeft"> INFRASTRUCTURE </ul>
+            </Link >
             <ul id="borderLeft"> FEE </ul>
             <ul className="extraList">STUDENT COUNCIL</ul>
-            <button>Login</button>
+            <button onClick={navigateToAuth}>Login</button>
           </div>
         </div>
       </div>
@@ -38,4 +58,4 @@ function homeNavbar() {
   );
 }
 
-export default homeNavbar;
+export default HomeNavbar;

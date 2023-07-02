@@ -3,6 +3,44 @@
   margin: 0px;
   font-family: "Rubik", sans-serif;
   font-family: "Ubuntu", sans-serif;
+} 
+.container{
+  // display: flex;
+  // flex-direction: column;
+  // overflow: scroll;
+  Footer{
+    padding-top: 1000px;
+  }
+}
+.carousel-container{
+  margin-top: 10%;
+  // z-index: 500;
+  // border: 10px black solid;
+  // .carousel{
+  //   width: 100%;
+  //   // overflow: hidden;
+  //   height: 100%;
+  //   margin-left: 20%;
+  //   // background: black;
+  //   .slider{
+
+  //   }
+  // }
+}
+.hidden{
+  display: block;
+}
+.navbar{
+  // overflow: hidden;
+  // position: fixed;
+  z-index:500;
+  // top: 0px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  // background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbarP1 {
   display: flex;
@@ -21,7 +59,7 @@
       height: 25px;
     }
     span {
-      font-weight: 900;
+      font-weight: bold !important;
       color: white;
       // font-style: normal;
     }
@@ -40,7 +78,9 @@
     background: black;
     display: flex;
     align-items: center;
-    gap: 10px;
+    padding-left: 60px;
+    gap: 30px;
+    font-weight: 600 !important;
     span {
       color: white;
     }
@@ -62,114 +102,772 @@
       height: 100px;
       width: 100px;
     }
-    .navbarinfo {
+    .navbarinfo{
       display: flex;
       gap: 13px;
-      ul {
+      ul{
         padding-right: 10px;
         margin-bottom: 10px;
         border-right: 1px solid gray;
+            
       }
-      button {
-        height: 30px;
-        width: 100px;
-        position: absolute;
-        left: 80%;
-        bottom: 6%;
-        border-radius: 10px;
-        background: #4d8c48;
-        border: none;
-        cursor: pointer;
-        color: #f3f3f3;
+      button{
+       height: 30px;
+       width: 100px;
+       position: absolute;
+       left: 80%;
+       bottom: 6%;
+       border-radius: 10px;
+       background: #4d8c48;
+       border: none;
+       cursor: pointer;
+       color: #f3f3f3;
+
+      
+       
       }
-      .extraList {
+      .extraList{
         border: none !important;
       }
     }
   }
 }
 
+.body{
+  // width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // gap: 10px;
+}
+.bodyp1{
+  height: 60vh;
+  // background: whitesmoke;
+  // opacity: .5;
+  background: whitesmoke !important;
+  
+  .image{
+    background-image: url("components/img/achevement-bg.jpg");
+    // background: rgba(0,0,0,.5);    
+    // filter: blur(2px);
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+     gap: 15px;
+    justify-content: space-between;
+    // background: whitesmoke;
+    .aboutUs{
+      height: 60vh;
+      // background-color: rgba(0,0,0,.5);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #fff;
+      flex: .4;
+      padding-top: 50px;
+      padding-right: 20px;
+      // border-right: 1px solid grey;
+      position: relative;
+      .aboutUs::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        border-right: 212px solid blue;
+        width: 50%;
+     }
+
+      // margin-left: ;
+      // position: absolute;
+      span{
+        font-weight: 800 !important;
+        text-align: right;
+        // filter: blur(none);
+        color: black;
+        // border-right: 1px solid grey;
+
+        font-weight: 700 !important;
+
+        font-style: normal;
+      }
+      h1{
+        color: black;
+        text-align: right;
+        // border-right: 1px solid grey;
+
+      }
+      p{
+        color: black;
+        text-align:justify;
+        padding-left: 40px;
+        // letter-spacing:  1px;
+        line-height: 30px;
+      }
+      a{
+        padding-left: 40px;
+        color: violet;
+        // font-size: 17px;
+        font-weight: 700;
+      }
+    }
+    .features{
+      flex: .25;
+      margin-top: 40px;
+      border-left: .5px solid grey;
+      margin-bottom: 70px;
+      padding-left: 30px;
+
+      // background-color: rgba(0,0,0,.5);
+      .rightbox{
+
+        .c1{
+         background:URL("components/img/counter-1.png") no-repeat top 5px left 5px;
+         font-size: 34px;
+          color: #4a4a4a;
+          font-weight: 700;
+          padding-left: 70px;
+          margin-top: 0px;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          span{
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+            left: -45px;
+          }
+        }
+
+        .c2{
+          background:URL("components/img/counter-2.png") no-repeat top 5px left 5px;
+          font-size: 34px;
+           color: #4a4a4a;
+           font-weight: 700;
+           padding-left: 70px;
+           margin-top: 0px;
+           margin-bottom: 30px;
+           padding-bottom: 10px;
+           span{
+             font-size: 20px;
+             position: relative;
+             top: 20px;
+             left: -70px;
+           }
+         }
+
+        .c3{
+          background:URL("components/img/counter-3.png") no-repeat top 5px left 5px;
+          font-size: 34px;
+           color: #4a4a4a;
+           font-weight: 700;
+           padding-left: 70px;
+           margin-top: 0px;
+           margin-bottom: 30px;
+           padding-bottom: 10px;
+           span{
+             font-size: 20px;
+             position: relative;
+             top: 20px;
+             left: -73px;
+             line-height: 0px;
+           }
+         }
+      }
+
+      
+      }
+
+    }
+    .birthday{
+      flex: .35;
+      // background-color: rgba(0,0,0,.5);
+      // background: url("components/img/9219392.jpg");
+      // object-fit: cover;
+      // height: 10px;
+      // width: 50px;
+      background: url("components/img/IMG_20230629_231435.jpg") ;
+
+      background-size: cover;
+      // img{
+      //   // padding-bottom: 100px;
+      //   // position: relative;
+      //   // bottom: 70px;
+      //   z-index: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   object-fit: cover;
+      // }
+    }
+
+  }
+  .bodyp2{
+    background: #f0f0f0;
+    height: 60vh;
+    h3{
+      padding-top: 60px;
+      padding-left: 100px;
+      background: url("components/img/achivement.png") no-repeat top 47px left 49px;
+    }
+    
+  }
+  .bodyp3{
+    .buttonside{
+      margin: 25px 40%;
+      display: flex;
+      .btn-images{
+        font-family: Roboto, sans-serif;
+        font-weight: 0;
+        font-size: 14px;
+        color: #fff;
+        background-color: #34a65c;
+        padding: 10px 30px;
+        border: solid #34a65c 2px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 50px 0px 0px 50px;
+        transition : 1000ms;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+      }
+      .btn-video{
+        font-family: Roboto, sans-serif;
+        font-weight: 0;
+        font-size: 14px;
+        color: #fff;
+        background-color: #34a65c;
+        padding: 10px 30px;
+        border: solid #34a65c 2px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 0px 50px 50px 0px;
+        transition : 1000ms;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+      }
+      .btn-images:hover{
+
+        transition : 1000ms;
+        padding: 10px 50px;
+        transform : translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: solid 1px black;
+        }
+        .btn-video:hover{
+
+          transition : 1000ms;
+          padding: 10px 50px;
+          transform : translateY(-0px);
+          background-color: #fff;
+          color: #0066cc;
+          border: solid 1px black;
+          }
+    }
+  }
+  .list-groupi{
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    // max-width: 100%;
+    flex-wrap: wrap;
+   margin: 50px 120px;
+    gap: 20px;
+   
+    img{
+      height: 300px;
+      border-radius: 10px;
+      width: auto;
+    }
+
+  }
+  .list-groupv{
+    display: flex;
+    height: vh;
+    max-width: 100%;
+    // max-width: 100%;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+    gap: 20px;
+    iframe{
+      border-radius: 10px;
+    }
+
+  }
+
+  .rec.rec-arrow{
+   margin-left:50px;
+   margin-right: 50px;
+  }
+  .sc-dcJsrY rec-carousel{
+    position: relative;
+    top: 10px;
+  }
+  .Styling{
+    // background: url("components/img/IMG_20230629_231435.jpg");
+  }
+    // .movingContent sc-dcJsrY.hbMISa.rec.rec-carousel{
+    //    margin-top: 100%;
+    // }
+    .movingContent{
+      margin-top: 55%;
+      button{
+      display: none;
+      }
+    }
+    .maps{
+      height: 2000px;
+      border-radius: 10px;
+    }
+
 // auth page css started from here.......
 
-.authBg {
-  background-color: rgb(148, 91, 91);
-  height: 100vh;
-  background-size: cover;
-  background-image: url(/components/img/637871091351756430DSC03881-Copy.jpg);
+    .authBg {
+      background-color: rgb(148, 91, 91);
+      height: 100vh;
+      background-size: cover;
+      background-image: url(/components/img/637871091351756430DSC03881-Copy.jpg);
+    }
+    
+    .authBgFilter {
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.673);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .loginPage {
+      height: 66vh;
+      width: 40vw;
+      background-color: rgba(255, 255, 255, 0.613);
+      border-radius: 30px;
+    }
+    
+    .loginPage img {
+      height: 170px;
+      width: 170px;
+     position: relative;
+     top: 0%;
+     left: 33%;
+    }
+    
+    .loginPage h1 {
+      // padding-top: 22%;
+      padding-left: 10%;
+      position: relative;
+    
+      top: -10%;
+      font-size: 30px;
+      color: #4d8c48;
+    }
+    
+    .inputBox {
+      display: flex;
+      // position: relative;
+      // top: -5%;
+      // left: -6%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      // margin-bottom: 80px;
+    }
+    .inputBox input {
+      width: 400px;
+      height: 40px;
+      border-color: rgba(255, 255, 255, 0);
+      border-radius: 5px;
+    }
+    
+    .inputBox p {
+      // padding-top: 20px;
+      // padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      padding-right: 53%;
+      color: #4d8c48;
+    }
+    .inputBox h5 {
+      padding-left: 50%;
+      color: #4d8c48;
+      padding-top: 5px;
+      cursor: pointer;
+    }
+    
+    // .inputBox {
+    //   height: 40px;
+    //   width: 100px;
+    //   padding-right: 40%;
+    // }
+    
+    .inputButton {
+      height: 30px;
+      width: 90px;
+      margin-left: 83px;
+      // margin-top: 10px;
+      font-size: 15px;
+      border-color: rgba(255, 255, 255, 0);
+      background-color: #4d8c48;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+
+
+    // about page css start from here.........
+
+.aboutMainSection {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  overflow: hidden;
 }
 
-.authBgFilter {
-  height: 100vh;
+.aboutAllSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.aboutFilter {
+  background-color: #1db954cf;
+  height: 50vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.673);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.loginPage {
-  height: 60vh;
-  width: 40vw;
-  background-color: rgba(255, 255, 255, 0.613);
-  border-radius: 30px;
+.aboutBorder {
+  border-bottom: 5px solid rgb(0, 0, 0);
+  padding-bottom: 5px;
 }
 
-.loginPage img {
+.aboutFilter h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.schoolLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.schoolLogo img {
   height: 200px;
   width: 200px;
-  position: absolute;
-  padding-top: 0%;
-  padding-left: 15%;
 }
 
-.loginPage h1 {
-  padding-top: 22%;
-  padding-left: 44%;
-  font-size: 40px;
-  color: #4d8c48;
+.aboutSection {
+  background-image: url("/components/img/img.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 50vh;
+  width: 100vw;
 }
 
-.inputBox {
+.aboutContant {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100vw;
+  gap: 20px;
+}
+
+.aboutContant h1 {
+  padding: 100px;
+  padding-top: 0;
+  font-size: 50px;
+}
+
+.aboutParagraph {
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #1db954;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.aboutParagraph p {
+  width: 70vw;
+}
+
+// about page css are end :)
+
+
+// footer css start from here.......
+
+.footerBgColor {
+  background-color: #ababab;
+  height: 50vh;
+  width: 100vw;
+  margin-top: 50px;
+  // position: relative;
+  // top: 100vh;
+  // bottom: 0vh;
+  // position: relative;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+  // overflow: hidden;
+}
+.topPannelFooter {
+  // background-color: red;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.copyrightText {
+  // margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: aqua;
+  height: 10%;
+}
+
+.footerTextSection {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.inputBox input {
-  width: 400px;
-  height: 40px;
-  border-color: rgba(255, 255, 255, 0);
-  border-radius: 5px;
+  // background-color: aquamarine;
+  height: 100%;
+  width: 30%;
 }
 
-.inputBox p {
-  padding-top: 20px;
+.footerTextSection div {
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.footerContactSectionMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: #1db9b1;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+.introduction h3 {
+  font-size: 30px;
+  padding-left: 0%;
   padding-bottom: 10px;
+}
+
+.introductionList ul li {
   font-size: 20px;
-  font-weight: 700;
-  padding-right: 40%;
-  color: #4d8c48;
-}
-.inputBox h5 {
-  padding-left: 40%;
-  color: #4d8c48;
-  padding-top: 5px;
+  text-decoration: none;
+  padding-left: 10px;
+  list-style-type: none;
   cursor: pointer;
 }
 
-.inputBox div {
-  height: 40px;
-  width: 100px;
-  padding-right: 40%;
+.footerContactSection div {
+  padding-bottom: 10px;
+  font-size: 15px;
+  padding-left: 20px;
+  border-left: 2px solid;
+  // background-color: #1db954;
 }
-
-.inputBox div button {
-  height: 45px;
-  width: 150px;
+.contact h3 {
   font-size: 25px;
-  border-color: rgba(255, 255, 255, 0);
-  background-color: #4d8c48;
+  padding-bottom: 10px;
+}
+.contact h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.contact p {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.contactDetails h5 {
+  padding-bottom: 2px;
+}
+
+.contactDetails a {
+  text-decoration: none;
+}
+.footerMapSection {
+  // background-color: black;
+  // max-width: ;
+  // max-height: 10%;
+  // background-image: url("/components/img/map.png");
+  // background-size: cover;
+  
+}
+.footerBgColor{
+//   position: relative;
+//  top: 100vh;
+//  padding-top: 100px;
+}
+.footerMapSection{
+  // border-radius: 50%;
+  padding-left: 70px;
+   iframe{
+    border-radius: 5%;
+    height: 250px;
+    width: 500px;
+   }
+}
+
+// footer components end now oops :(
+
+
+// infrastructure page css is stert from here.......
+
+.infraBgCover {
+  background-image: url("components/img/img.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.infrastructure {
+  margin-top: 10%;
+  max-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.77);
+}
+
+.sectionInfra {
+  max-width: 100vw;
+  // background-color: #1db954;
+  display: flex;
+}
+
+.imageBoxLeftInfra {
+  width: 50vw;
+  height: 70vh;
+  // background-color: red;
+  margin: 10px;
+}
+
+.textBoxRightInfra {
+  width: 50vw;
+  height: 70vh;
+  // background-color: black;
+  margin: 10px;
+  padding: 0%;
+}
+
+.infraHeading div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.infraHeading {
+  background-image: url("components/img/unnamed.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.infraFilterHeader {
+  background-color: rgba(255, 255, 255, 0.734);
+}
+
+.infraHeading div img {
+  height: 200px;
+}
+
+.infraHeading div h1 {
+  border-bottom: 5px solid black;
+  color: #1db954;
+}
+
+.borderInfra {
+  border-bottom: 2px solid;
+}
+
+.imageBoxLeftInfra {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.textBoxRightInfra {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.imageBoxLeftInfra img {
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+  object-fit:scale-down;
+}
+
+.textBoxRightInfra  img {
+  height: 300px;  
+  max-width: 400px;
+  border-radius: 10px;
+}
+.infraStr{
+  padding:30px ;
+  font-size: 30px;
+  color: black;
+  // text-decoration: none;
+  
+}
+
+.imageBoxLeftInfra div h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #1db954;
+}
+
+.textBoxRightInfra div h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #1db954;
+}
+
+.textBoxRightInfra p {
+  font-size: 25px;
+  width: 70%;
+  text-align: justify;
+  // text-align: ceil($number: 0);
   color: white;
-  border-radius: 15px;
-  cursor: pointer;
+  // padding-right: 10%;
+}
+
+.imageBoxLeftInfra p {   ///
+  font-size: 25px;
+  width: 70%;
+  text-align: justify;
+  color: white;
+}
+
+.rightTextBorder {
+  border-left: 5px solid #1db954;
+  height: 70%;
+  width: 70%;
+}
+
+.leftTextBorder {
+  border-right: 5px solid #1db954;
+  height: 70%;
 }

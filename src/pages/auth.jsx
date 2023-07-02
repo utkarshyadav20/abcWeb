@@ -1,5 +1,5 @@
 import React from "react";
-import HomeNavbar from "../components/homeNavbar";
+// import HomeNavbar from "../components/HomeNavbar";
 import schoolLogo from "../components/img/ABC SCHOOL LOGO.png";
 
 function auth() {
@@ -15,10 +15,8 @@ function auth() {
             <p>Password</p>
             <input type="password" placeholder="Enter Password" />
             <h5>forgot password?</h5>
-            <div>
-              <button>Login</button>
-            </div>
           </div>
+            <button className="inputButton">Login</button>
         </div>
       </div>
     </div>
