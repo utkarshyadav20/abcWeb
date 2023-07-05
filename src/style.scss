@@ -15,6 +15,8 @@
 .carousel-container{
   margin-top: 10%;
   // z-index: 500;
+  // max-width: 2410px;
+  // display: block;
   // border: 10px black solid;
   // .carousel{
   //   width: 100%;
@@ -27,8 +29,15 @@
   //   }
   // }
 }
+.xyz{
+  display: block  !important;
+}
 .hidden{
   display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .navbar{
   // overflow: hidden;
@@ -310,9 +319,13 @@
     
   }
   .bodyp3{
+    display: flex;
+    flex-direction: column;
     .buttonside{
       margin: 25px 40%;
       display: flex;
+      justify-content: center;
+      align-items: center;
       .btn-images{
         font-family: Roboto, sans-serif;
         font-weight: 0;
@@ -373,7 +386,9 @@
     max-width: 100%;
     // max-width: 100%;
     flex-wrap: wrap;
-   margin: 50px 120px;
+     margin: 50px 120px;
+     justify-content: center;
+     align-items: center;
     gap: 20px;
    
     img{

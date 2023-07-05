@@ -22,11 +22,14 @@ function Carasol() {
             url:"https://yaleschoolnj.com/wp-content/uploads/2022/10/marlton-home-slider-min-aspect-ratio-1920-600.jpg"
       }
     ];
+    var w = window.innerWidth;
+//    var h = window.innerHeight;
 
   return (
     <div class="carousel-container">
         <SimpleImageSlider
-        width={1440}
+        className="xyz"
+        width={w}
         height={500}
         images={sliderImages}
         showBullets={true}

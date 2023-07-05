@@ -179,6 +179,9 @@ function HomeBody() {
           </Carousel>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
       <div className="bodyp3">
         <div className="buttonside">
           <button onClick={() => changeState()} class="btn-images">
@@ -255,24 +258,24 @@ function HomeBody() {
           </ul>
          </div>
         )}
-      <div className="Styling">
-        <Link to="/infra" style={{textDecoration: 'none'}}>
-        <h1 className="infraStr">Infrastructure</h1>
-        </Link>
-        <Carousel
-          itemsToScroll={1}
-          itemsToShow={4}
-          focusOnSelect={true}
-          itemHeight={10}
-          itemWidth={10}
-        >
-          {items2.map((items) => (
-            <div key={items.id}>
-              <img src={items.loc} style={LabelContainer1} alt="" />
-              <h4 style={title}>{items.title}</h4>
-            </div>
-          ))}
-        </Carousel>
+            <div className="Styling">
+              <Link to="/infra" style={{textDecoration: 'none'}}>
+              <h1 className="infraStr">Infrastructure</h1>
+              </Link>
+              <Carousel
+                itemsToScroll={1}
+                itemsToShow={4}
+                focusOnSelect={true}
+                itemHeight={10}
+                itemWidth={10}
+              >
+                {items2.map((items) => (
+                  <div key={items.id}>
+                    <img src={items.loc} style={LabelContainer1} alt="" />
+                    <h4 style={title}>{items.title}</h4>
+                  </div>
+                ))}
+              </Carousel>
       </div>
 
       <Footer></Footer>
