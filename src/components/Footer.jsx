@@ -10,9 +10,11 @@ function Footer() {
           </div>
           <div className="introductionList">
             <ul>
-              <Link to="/aboutUs" style={{textDecoration: 'none',color:'black'}}>
-
-              <li>About Us</li>
+              <Link
+                to="/aboutUs"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <li>About Us</li>
               </Link>
               <li>Vision and Mission</li>
               <li>Chairman Message</li>
@@ -47,18 +49,27 @@ function Footer() {
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-linkedin"></i>
             </div>
-        </div>
-        <div className="footerMapSection">
-              <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65652.06191353113!2d77.66989431155599!3d28.969918528309535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c6452ea119981%3A0x7242561d9c89f73!2sMilitary%20Hospital!5e0!3m2!1sen!2sin!4v1688189034526!5m2!1sen!2sin"
-            width="900"
-            height="900"
-            // style={mapStyle}
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-          ></iframe>
-    </div>
+          </div>
+          <div className="footerMapSection">
+            {/* <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65652.06191353113!2d77.66989431155599!3d28.969918528309535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c6452ea119981%3A0x7242561d9c89f73!2sMilitary%20Hospital!5e0!3m2!1sen!2sin!4v1688189034526!5m2!1sen!2sin"
+              width="900"
+              height="900"
+              // style={mapStyle}
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe> */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16659.76722111825!2d80.97465824229022!3d26.845880597873137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd2d2e2f1a81%3A0xffd00a64f04bdd0d!2sCity%20Montessori%20School!5e0!3m2!1sen!2sin!4v1688661997776!5m2!1sen!2sin"
+              width="900"
+              height="900"
+              // style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
       <div className="copyrightText">

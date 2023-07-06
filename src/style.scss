@@ -480,21 +480,24 @@
     }
     
     .loginPage img {
-      height: 170px;
-      width: 170px;
-     position: relative;
-     top: 0%;
-     left: 33%;
+      height: 150px;
+      width: 150px;
+    //  position: relative;
+    //  top: 0%;
+    //  left: 33%;
+    display: block;
+      margin: auto;
     }
     
     .loginPage h1 {
       // padding-top: 22%;
-      padding-left: 10%;
-      position: relative;
+      // padding-left: 10%;
+      // position: relative;
     
-      top: -10%;
+      // top: -10%;
       font-size: 30px;
       color: #4d8c48;
+      text-align: center;
     }
     
     .inputBox {
@@ -509,24 +512,26 @@
       // margin-bottom: 80px;
     }
     .inputBox input {
-      width: 400px;
-      height: 40px;
+      width: 70%;
+      height: 35px;
       border-color: rgba(255, 255, 255, 0);
       border-radius: 5px;
+      padding-left: 10px;
     }
     
     .inputBox p {
       // padding-top: 20px;
-      // padding-bottom: 10px;
+      padding-bottom: 10px;
       font-size: 20px;
       font-weight: 700;
-      padding-right: 53%;
+      padding-right: 56%;
       color: #4d8c48;
     }
     .inputBox h5 {
       padding-left: 50%;
-      color: #4d8c48;
+      color: #244721;
       padding-top: 5px;
+      font-size:16px ;
       cursor: pointer;
     }
     
@@ -537,8 +542,8 @@
     // }
     
     .inputButton {
-      height: 30px;
-      width: 90px;
+      height: 10%;
+      width:25%;
       margin-left: 83px;
       // margin-top: 10px;
       font-size: 15px;
@@ -547,6 +552,8 @@
       color: white;
       border-radius: 10px;
       cursor: pointer;
+      display: block;
+      margin: auto;
     }
 
 
@@ -735,26 +742,15 @@
 .contactDetails a {
   text-decoration: none;
 }
-.footerMapSection {
-  // background-color: black;
-  // max-width: ;
-  // max-height: 10%;
-  // background-image: url("/components/img/map.png");
-  // background-size: cover;
-  
-}
-.footerBgColor{
-//   position: relative;
-//  top: 100vh;
-//  padding-top: 100px;
-}
+
 .footerMapSection{
   // border-radius: 50%;
   padding-left: 70px;
    iframe{
-    border-radius: 5%;
-    height: 250px;
-    width: 500px;
+    border-radius: 20px;
+    height: 230px;
+    width: 140%;
+    border-color: #f0f0f000;
    }
 }
 
