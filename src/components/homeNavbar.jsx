@@ -29,7 +29,7 @@ function HomeNavbar() {
 
           <span >About us</span>
          </Link>
-        
+         <button onClick={navigateToAuth}>Login</button>
         </div>
       </div>
 
@@ -50,7 +50,7 @@ function HomeNavbar() {
             </Link >
             <ul id="borderLeft"> FEE </ul>
             <ul className="extraList">STUDENT COUNCIL</ul>
-            <button onClick={navigateToAuth}>Login</button>
+            {/* <button onClick={navigateToAuth}>Login</button> */}
           </div>
         </div>
       </div>

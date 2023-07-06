@@ -101,9 +101,12 @@ function HomeBody() {
   //     </Button>
   //   );
   // };
-
+  //    var w = window.innerWidth;
+  //  const bodyStyle={
+  //     width:{w} +'!important',
+  //  }
   return (
-    <div className="body">
+    <div className="body" >
       <div className="bodyp1">
         <div className="image">
           <div className="aboutUs">
